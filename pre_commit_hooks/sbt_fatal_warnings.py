@@ -15,7 +15,7 @@ def main(argv=None):
 
     args = arg_p.parse_args(argv).__dict__
 
-    if ARG_ADDITIONAL_ARGS not in args:
+    if ARG_ADDITIONAL_ARGS not in args or args[ARG_ADDITIONAL_ARGS] is None:
         args[ARG_ADDITIONAL_ARGS] = []
 
     args[ARG_ADDITIONAL_ARGS].append("-Xfatal-warnings")
