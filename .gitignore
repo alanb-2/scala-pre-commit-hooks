@@ -10,3 +10,6 @@ out/
 atlassian-ide-plugin.xml
 
 venv
+
+# Python
+**.egg-info/
